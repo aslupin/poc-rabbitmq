@@ -1,0 +1,33 @@
+version: "3.1"
+services:
+  rabbitmq:
+    container_name: rabbitmq-poc
+    image: rabbitmq:management
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+    healthcheck:
+      test: ["CMD", "nc", "-z", "localhost", "5672"]
+      interval: 5s
+      timeout: 15s
+      retries: 1
+
+  sender:
+    container_name: rabbitmq-sender
+    build:
+      context: ./
+      dockerfile: sender.Dockerfile
+    restart: on-failure
+    depends_on:
+      - rabbitmq
+
+  receiver:
+    container_name: rabbitmq-receiver
+    build:
+      context: ./
+      dockerfile: receiver.Dockerfile
+    restart: on-failure
+    depends_on:
+      - rabbitmq
+    links:
+      - rabbitmq
