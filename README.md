@@ -2,7 +2,7 @@
 
 POC for RabbitMQ on node.We use docker-compose build dockerfile for each service (sender and receiver)
 
-##### note : waiting 20s for starting rabbitmq.
+##### note : wait 20s for starting rabbitmq.
 
 ### Installing
 
