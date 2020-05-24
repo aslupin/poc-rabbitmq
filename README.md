@@ -1,10 +1,10 @@
-# POC for RabbitMQ (amqplib/callback_api)
+## Counting and  Counter example (POC for RabbitMQ)
 
-POC for RabbitMQ on node.We use docker-compose build dockerfile for each service (sender and receiver)
+POC for RabbitMQ on NodeJs :Docker-compose build dockerfile for each service (sender and receiver)
 
 ##### note : wait 20s for starting rabbitmq.
 
-### Installing
+### Usage
 
 ```bash
 docker-compose up
@@ -13,3 +13,8 @@ docker-compose up
 ### Management Page
 
 http://localhost:1567
+
+### Libs
+```
+- amqplib (amqplib/callback_api
+```
