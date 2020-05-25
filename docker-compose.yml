@@ -6,11 +6,6 @@ services:
     ports:
       - "15672:15672"
       - "5672:5672"
-    # healthcheck:
-    #   test: ["CMD", "nc", "-z", "localhost", "5672"]
-    #   interval: 5s
-    #   timeout: 15s
-    #   retries: 1
 
   sender:
     container_name: rabbitmq-sender
