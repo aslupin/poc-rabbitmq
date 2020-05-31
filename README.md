@@ -1,4 +1,4 @@
-## Counting and  Counter example (POC for RabbitMQ)
+## Counting and  Counter example (PoC for RabbitMQ)
 
 PoC for RabbitMQ on NodeJs :Docker-compose build dockerfile for each service (sender and receiver)
 
