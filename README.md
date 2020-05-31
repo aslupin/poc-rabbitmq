@@ -1,6 +1,6 @@
 ## Counting and  Counter example (POC for RabbitMQ)
 
-POC for RabbitMQ on NodeJs :Docker-compose build dockerfile for each service (sender and receiver)
+PoC for RabbitMQ on NodeJs :Docker-compose build dockerfile for each service (sender and receiver)
 
 ##### note : wait 20s for starting rabbitmq.
 
